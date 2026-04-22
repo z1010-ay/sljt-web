@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杀戮尖塔 - Slay the Spire</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 确保游戏截图大小一致且不变形 */
+        .screenshot {
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站头部和导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">杀戮尖塔</div>
+                <ul class="nav-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">游戏介绍</a></li>
+                    <li><a href="#features">游戏特色</a></li>
+                    <li><a href="#cards">卡牌系统</a></li>
+                    <li><a href="#characters">角色介绍</a></li>
+                    <li><a href="#screenshots">游戏截图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="video/v1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>杀戮尖塔</h1>
+            <p>一款融合了卡牌游戏和roguelike元素的独立游戏，挑战你的策略和运气！</p>
+            <a href="#about" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 游戏介绍部分 -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">游戏介绍</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p>《杀戮尖塔》是一款由MegaCrit开发的独立游戏，融合了卡牌游戏和roguelike元素。游戏中，玩家需要通过构建强大的卡牌组合，攀爬一座不断变化的尖塔，面对各种敌人和挑战。</p>
+                    <p>每次游戏都是一次全新的体验，因为尖塔的布局、敌人的配置和卡牌的获取都是随机生成的。玩家需要根据当前情况灵活调整策略，选择适合的卡牌和遗物，才能成功登顶。</p>
+                    <p>游戏拥有丰富的卡牌系统、多样的角色选择和深度的策略性，使其成为一款极具挑战性和耐玩性的游戏。</p>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="image/封面.webp" alt="杀戮尖塔游戏界面" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏特色部分 -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">游戏特色</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>卡牌系统</h3>
+                    <p>游戏拥有超过300种不同的卡牌，包括攻击、防御和技能卡牌。玩家可以通过战斗和事件获得新卡牌，构建适合自己风格的卡组。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Roguelike元素</h3>
+                    <p>每次游戏都是一次全新的体验，尖塔的布局、敌人的配置和卡牌的获取都是随机生成的，增加了游戏的 replayability。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>多样的角色选择</h3>
+                    <p>游戏提供多个不同的角色，每个角色都有独特的卡牌池和能力，玩家可以选择适合自己游戏风格的角色。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>遗物系统</h3>
+                    <p>通过探索尖塔，玩家可以获得各种遗物，这些遗物可以提供强大的被动效果，进一步增强玩家的能力。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>挑战性的战斗</h3>
+                    <p>游戏中的敌人种类繁多，每个敌人都有独特的攻击模式和能力，玩家需要制定策略才能战胜它们。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>深度的策略性</h3>
+                    <p>玩家需要仔细考虑每一步的行动，包括卡牌的选择、能量的管理和遗物的搭配，才能成功登顶。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 卡牌系统介绍部分 -->
+    <section class="section" id="cards">
+        <div class="container">
+            <h2 class="section-title">卡牌系统</h2>
+            <div style="margin-bottom: 40px;">
+                <p>杀戮尖塔的卡牌系统是游戏的核心玩法之一，玩家需要通过收集和管理卡牌来构建强大的卡组，应对各种挑战。</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="image/攻击.jpg" alt="攻击卡牌">
+                    <h3>攻击卡牌</h3>
+                    <p>主要用于对敌人造成伤害，是战斗中的主要输出手段。</p>
+                </div>
+                <div class="card">
+                    <img src="image/防御.jpg" alt="防御卡牌">
+                    <h3>防御卡牌</h3>
+                    <p>用于增加玩家的格挡值，减少敌人的伤害。</p>
+                </div>
+                <div class="card">
+                    <img src="image/技能.jpg" alt="技能卡牌">
+                    <h3>技能卡牌</h3>
+                    <p>提供各种特殊效果，如抽卡、遗物互动等。</p>
+                </div>
+                <div class="card">
+                    <img src="image/能力.png" alt="能力卡牌">
+                    <h3>能力卡牌</h3>
+                    <p>提供持续的被动效果，增强玩家的能力。</p>
+                </div>
+            </div>
+            <div style="margin-top: 40px;">
+                <h3>卡牌稀有度</h3>
+                <p>卡牌分为普通（白色）、稀有（蓝色）和传说（金色）三种稀有度，稀有度越高，卡牌的效果通常越强大。</p>
+                <h3>卡牌升级</h3>
+                <p>玩家可以在游戏中通过特定事件或商店升级卡牌，升级后的卡牌效果会得到增强。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏角色介绍部分 -->
+    <section class="section" id="characters">
+        <div class="container">
+            <h2 class="section-title">角色介绍</h2>
+            <div class="characters">
+                <div class="character-card">
+                    <img src="image/铁甲战士.jpg" alt="铁甲战士">
+                    <h3>铁甲战士</h3>
+                    <p>战士类型角色，擅长使用强大的攻击卡牌和防御卡牌，拥有较高的生命值和恢复能力。</p>
+                    <p>核心机制：愤怒，通过攻击敌人积累愤怒值，解锁更强大的卡牌效果。</p>
+                </div>
+                <div class="character-card">
+                    <img src="image/静默猎手.webp" alt="静默猎手">
+                    <h3>静默猎手</h3>
+                    <p>刺客类型角色，擅长使用敏捷的攻击和毒素效果，拥有较高的灵活性和爆发能力。</p>
+                    <p>核心机制：毒素，通过卡牌对敌人施加毒素，毒素会在回合结束时造成持续伤害。</p>
+                </div>
+                <div class="character-card">
+                    <img src="image/故障机器人.webp" alt="故障机器人">
+                    <h3>故障机器人</h3>
+                    <p>机器人类型角色，擅长使用各种能量球和科技卡牌，拥有强大的控制和爆发能力。</p>
+                    <p>核心机制：能量球，通过卡牌生成不同类型的能量球，提供各种效果和增强。</p>
+                </div>
+                <div class="character-card">
+                    <img src="image/观者.jpg" alt="观者">
+                    <h3>观者</h3>
+                    <p>神秘类型角色，擅长使用双形态切换和预言机制，拥有独特的战斗风格。</p>
+                    <p>核心机制：预言，通过卡牌生成预言，在特定条件下触发强大的效果。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏截图和图片部分 -->
+    <section class="section" id="screenshots">
+        <div class="container">
+            <h2 class="section-title">游戏截图</h2>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="image/游戏截图1.jpg" alt="游戏截图1">
+                </div>
+                <div class="screenshot">
+                    <img src="image/游戏截图2.jpg" alt="游戏截图2">
+                </div>
+                <div class="screenshot">
+                    <img src="image/游戏截图3.webp" alt="游戏截图3">
+                </div>
+                <div class="screenshot">
+                    <img src="image/游戏截图4.jpg" alt="游戏截图4">
+                </div>
+                <div class="screenshot">
+                    <img src="image/游戏截图5.webp" alt="游戏截图5">
+                </div>
+                <div class="screenshot">
+                    <img src="image/游戏截图6.webp" alt="游戏截图6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚信息部分 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">杀戮尖塔</div>
+                <p>© 2026 杀戮尖塔网站 - 非官方粉丝网站</p>
+                <ul class="footer-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">游戏介绍</a></li>
+                    <li><a href="#features">游戏特色</a></li>
+                    <li><a href="#cards">卡牌系统</a></li>
+                    <li><a href="#characters">角色介绍</a></li>
+                    <li><a href="#screenshots">游戏截图</a></li>
+                </ul>
+                <p>本网站仅用于展示和介绍游戏，所有游戏相关内容均属于其各自的版权所有者。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
